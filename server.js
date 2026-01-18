@@ -6,6 +6,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import http from "http";
 import { Server } from "socket.io";
+import todoRoutes from "./routes/todoRoutes.js";
 
 // ROUTES
 import reviewRoutes from "./routes/reviewRoutes.js";
@@ -48,6 +49,7 @@ app.use("/api/products", productRoutes);
 app.use("/api/orders", orderRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/reviews", reviewRoutes);
+app.use("/api/todo", todoRoutes);
 
 /* ================= HEALTH CHECK ================= */
 app.get("/", (req, res) => {
