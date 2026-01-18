@@ -27,7 +27,7 @@ const __dirname = path.dirname(__filename);
 /* ================= CORS ================= */
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://rupanjanasaha550.github.io/traditionalfrontend",
+  "https://rupanjanasaha550.github.io",
   "https://github.com/ismartashish/traditionalfrontend.git" 
 ];
 
